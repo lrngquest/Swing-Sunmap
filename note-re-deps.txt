@@ -1,0 +1,10 @@
+Adding the  resources  dir to :paths allows code execute from the project dir
+and also be readily packaged as an uberjar.
+
+
+Change from default deps.edn:
+
+2c2
+<   :paths ["src"]
+---
+>   :paths ["src" "resources"]
