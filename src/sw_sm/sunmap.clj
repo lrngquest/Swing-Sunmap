@@ -1,4 +1,4 @@
-(ns swingsunmap.sunmap)
+(ns sw-sm.sunmap)
 ;; Sun map from current time, daytime, nighttime maps.  Started 2017Jun02
 
 ;;NOTE Code with CamelCase names should be considered translation (or

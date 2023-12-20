@@ -4,7 +4,7 @@
 ;;    Copyright (C) 2010 Sebastian Benz    Eclipse Public License
 
 
-(ns swingsunmap.core
+(ns sw-sm.core
   (:import 
     (javax.swing JFrame JPanel Timer)
     (java.awt Color Dimension  Font)
@@ -12,7 +12,7 @@
     (java.awt.image BufferedImage)
     (javax.imageio ImageIO)
     (java.time Instant ZoneOffset OffsetDateTime)  ) ;; ==> Java 8 reqd.
-  (:require [clojure.java.io :as cjio])  (:require [swingsunmap.sunmap :as sm])
+  (:require [clojure.java.io :as cjio])  (:require [sw-sm.sunmap :as sm])
   (:gen-class) )
 
 

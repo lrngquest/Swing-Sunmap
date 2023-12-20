@@ -8,7 +8,7 @@ Add for building uberjar with  uberdeps.
    $ cat >uberdeps/package.sh
 #!/bin/bash -e
 cd "$( dirname "${BASH_SOURCE[0]}" )"
-clojure -M -m uberdeps.uberjar --deps-file ../deps.edn --target ../target/swsm.jar --main-class swingsunmap.core
+clojure -M -m uberdeps.uberjar --deps-file ../deps.edn --target ../target/sw-sm.jar --main-class sw_sm.core
 
    $ chmod a+x uberdeps/package.sh
 
@@ -17,11 +17,11 @@ Edit  deps.edn  adding "classes"    :paths ["src" "resources" "classes"]
 
 
 Do AOT compile:
-   $ clojure -M -e "(compile 'swingsunmap.core)"
+   $ clojure -M -e "(compile 'sw-sm.core)"
 
 Package:
    $ uberdeps/package.sh
 
 
-Copy/move  target/swsm.jar  to chosen destination.
+Copy/move  target/sw-sm.jar  to chosen destination.
 
